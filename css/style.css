@@ -1,4 +1,4 @@
-/*index.html // main */
+/* main */
 
 * {
     background-color: #e3d5ca;
@@ -12,9 +12,50 @@
     border-radius: 25%;
 }
 
+footer{
+    text-align: center;
+}
+
+/*index.html */
+
+section .container-index{
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-areas:
+    "imagen texto texto"
+    "texto texto texto"
+    "texto imagen imagen";
+}
+
+p .grid-texto{
+    grid-area: texto;
+    background-color: #8ca0ff;
+}
+
+.index___h1{
+    text-align: center;
+}
+
+.index___img{
+    margin-right: 20px;
+    grid-area: imagen;
+    background-color: #ffa08c;
+}
+
+.index___img img{
+    width: 400px;
+    height: 400px;
+    border-radius: 35px;
+    object-fit: cover;
+}
+
 /*Pages_cars.html*/
 
-.titulo-cars{
+.titulos-estilo{
     margin-bottom: 0px;
     padding: 10px;
 }
@@ -35,6 +76,13 @@
     object-fit: cover;  
     border: #d1b5a0 solid 1px;
     border-radius: 5px;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.grid___galery-img img:hover {
+    transform: scale(1.1);
+    filter: blur(2px);
+
 }
 
 .cars-img-uno{
