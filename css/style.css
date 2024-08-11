@@ -22,13 +22,9 @@ footer{
     all: none;
     display: flex;
     flex-wrap: wrap;
-    
     justify-content: center;
     align-items: center;
-    
     margin: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 .index-flex{
@@ -51,7 +47,7 @@ footer{
     object-fit: cover;
 }
 
-/*Pages_cars.html*/
+/*cars.html*/
 
 .titulos-estilo{
     margin-bottom: 0px;
@@ -108,4 +104,38 @@ footer{
 
 .cars-img-ocho{
     grid-column: span 2;
+}
+
+/* photography.html */
+
+.container-section{
+    all: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-text{
+    width: 500px;
+    height: auto;
+    font-size: 15px;
+    transition: 3s;
+}
+
+.section-text:hover{
+    font-size: 16px;
+}
+
+.section-img img{
+    width: 900px;
+    height: auto;
+    object-fit: cover;
+    margin: 100px;
+    border-radius: 3px;
+    transition: 3s;
+}
+/* nota para la query sacar el margin y hacerlo padding y acomodar las imagenes */
+.section-img img:hover{
+    transform: scale(1.1);
 }
