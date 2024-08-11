@@ -18,16 +18,25 @@ footer{
 
 /*index.html */
 
-div .container-index{
-    display: inline-flex;
+.container-index{
+    all: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+    
     margin: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-div .index-flex{
-    width: 600px;
-    height: 600px;
+.index-flex{
+    width: 500px;
+    height: 500px;
+    margin: 100px;
+    font-size: 17px;
+    /* background-color: goldenrod; */
 }
 
 .index-h1{
@@ -36,8 +45,8 @@ div .index-flex{
 
 .index-img{
     padding: 25px;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     border-radius: 35px;
     object-fit: cover;
 }
