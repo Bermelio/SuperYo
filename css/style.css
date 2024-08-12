@@ -183,3 +183,29 @@ footer{
     max-height: 1500px; /* Ajusta este valor según el contenido */
     padding: 15px;
 }
+
+                                    /* books */
+
+.container-book{
+    all: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside-info{
+    width: 500px;
+    height: auto;
+    font-size: 17px;
+    margin: 100px;
+}
+
+.article-img img{
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    margin: 150px;
+    border-radius: 3px;
+    transition: 3s;
+}
