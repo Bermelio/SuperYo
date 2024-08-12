@@ -16,7 +16,7 @@ footer{
     text-align: center;
 }
 
-/*index.html */
+                                                /*index.html */
 
 .container-index{
     all: none;
@@ -47,7 +47,7 @@ footer{
     object-fit: cover;
 }
 
-/*cars.html*/
+                                                /*cars.html*/
 
 .titulos-estilo{
     margin-bottom: 0px;
@@ -106,7 +106,7 @@ footer{
     grid-column: span 2;
 }
 
-/* photography.html */
+                                            /* photography.html */
 
 .container-section{
     all: none;
@@ -138,4 +138,48 @@ footer{
 /* nota para la query sacar el margin y hacerlo padding y acomodar las imagenes */
 .section-img img:hover{
     transform: scale(1.1);
+}
+
+
+                                    /* food - recetas */
+
+.recipe-container {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.food-image {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
+
+.toggle-label {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #4caf4fa2;
+    color: rgb(235, 233, 233);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.recipe-content {
+    all: none; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.toggle-input:checked ~ .recipe-content {
+    max-height: 1500px; /* Ajusta este valor según el contenido */
+    padding: 15px;
 }
