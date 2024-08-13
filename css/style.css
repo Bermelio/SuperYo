@@ -15,7 +15,6 @@
 footer{
     text-align: center;
 }
-
                                                 /*index.html */
 
 .container-index{
@@ -54,7 +53,7 @@ footer{
     padding: 10px;
 }
 
-.grid___galery-img {
+.grid-galery-img {
     display: grid;
     grid-template-columns: repeat(5, minmax(250px,1fr));
     grid-auto-rows: 300px;
@@ -64,7 +63,7 @@ footer{
     margin-right: 30px;
 }
 
-.grid___galery-img img{
+.grid-galery-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;  
@@ -73,7 +72,7 @@ footer{
     transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-.grid___galery-img img:hover {
+.grid-galery-img img:hover {
     transform: scale(1.1);
     filter: blur(2px);
 
