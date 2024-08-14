@@ -192,6 +192,14 @@ footer {
   transition: 3s;
 }
 
+.container-index, .container-section, .container-book {
+  all: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 500px) {
   .index-flex {
     margin: 25px;
@@ -216,6 +224,30 @@ footer {
   }
   .grid-galery-img img:hover {
     all: unset;
+  }
+  .section-img img {
+    width: 350px;
+    height: auto;
+    object-fit: contain;
+    margin: 20px;
+  }
+  .section-text {
+    margin: 10px 25px;
+    font-size: 15;
+  }
+  .container-section > *:nth-of-type(3) {
+    order: 4;
+  }
+  .container-section > *:nth-of-type(4) {
+    order: 3;
+  }
+  .article-img img {
+    margin: 20px 0px;
+    width: 300px;
+    height: auto;
+  }
+  .aside-info {
+    margin: 50px;
   }
 }
 
