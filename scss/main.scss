@@ -1,5 +1,6 @@
-/* main */
 // imports
+
+/*imports*/
 
 @import "utilitys/colors";
 @import "utilitys/size";
@@ -13,6 +14,8 @@ que este codigo y proyecto en general me hubiese
 quedado mas lindo si lo empezaba de 0 completamente.
 no me estoy justificando es una autocritica (creo)*/
 
+/* main */
+
 * {
     background-color: $color-main;
 }
@@ -22,6 +25,11 @@ no me estoy justificando es una autocritica (creo)*/
     color: $color-main;
     border: $color-main solid 1px;
     border-radius: 25%;
+}
+
+.titulos-contenedor{
+    text-align: center;
+    padding: 10px;
 }
 
 footer {
@@ -216,4 +224,19 @@ footer {
         line-height: 1.6;
     }
     
+    .grid-galery-img {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            img {   
+            @include size(350px, 200px);
+            margin: 15px;
+
+            &:hover{
+                all: unset;
+            }
+        }
+    }
 }

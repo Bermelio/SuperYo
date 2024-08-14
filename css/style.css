@@ -1,4 +1,4 @@
-/* main */
+/*imports*/
 .container-book, .container-section, .container-index {
   all: none;
   display: flex;
@@ -13,6 +13,7 @@ mantener el orden pero no se. Siento
 que este codigo y proyecto en general me hubiese
 quedado mas lindo si lo empezaba de 0 completamente.
 no me estoy justificando es una autocritica (creo)*/
+/* main */
 * {
   background-color: #e3d5ca;
 }
@@ -23,6 +24,11 @@ no me estoy justificando es una autocritica (creo)*/
   color: #e3d5ca;
   border: #e3d5ca solid 1px;
   border-radius: 25%;
+}
+
+.titulos-contenedor {
+  text-align: center;
+  padding: 10px;
 }
 
 footer {
@@ -196,6 +202,20 @@ footer {
   p {
     margin-bottom: 15px;
     line-height: 1.6;
+  }
+  .grid-galery-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-galery-img img {
+    width: 350px;
+    height: 200px;
+    margin: 15px;
+  }
+  .grid-galery-img img:hover {
+    all: unset;
   }
 }
 
