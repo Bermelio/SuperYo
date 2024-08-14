@@ -199,3 +199,21 @@ footer {
     border-radius: 3px;
     transition: 3s;
 }
+
+
+@media only screen and (max-width: 500px) {
+
+    .index-flex{
+        margin: 25px;
+    }
+
+    .container-index .index-flex:nth-of-type(4){
+        display: none;
+    }
+
+    p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+    
+}
