@@ -1,10 +1,11 @@
 @import "size";
 @import "extends";
+@import "colors";
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
     .container-index{
-        background-color: salmon;
+        background-color: $color-test-mobile;
     }
 
     .index-flex{
@@ -76,20 +77,42 @@
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px){
+@media only screen and (min-width: 480px) and (max-width: 768px){
     .container-index{
-        background-color: aquamarine;
+        background-color: $color-test-tablet;
+        .index-flex{
+            @include size (auto,auto);
+            @include pad-mar(0, 10px);
+            font-size: 14px;
+            & img{
+                @include size (350px, auto)
+            }
+        }
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px){
+@media only screen and (min-width: 768px) and (max-width: 1024px){
     .container-index{
-        background-color: royalblue;
+        background-color: $color-test-pc;
+        .index-flex{
+            @include size (350px,"");
+            // me quedaba mas lindo sin parametro asi que lo rompi apropocito jasjas seguramente este mal como practica
+            // pero me funciono asi que nada ese "" esta super mal.
+            @include pad-mar(20px, 0);
+            font-size: 15px;
+            & img{
+                @include size (350px, auto)
+            }
+        }
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1400px){
+@media only screen and (min-width: 1024px) and (max-width: 1400px){
     .container-index{
-        background-color: teal;
+        background-color: $color-test-over-pc;
+        .index-flex{
+            @include size (500px, auto);
+            @include pad-mar(20px, 0);
+        }
     }
 }
