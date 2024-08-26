@@ -4,9 +4,9 @@
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
-    .container-index{
-        background-color: $color-test-mobile;
-    }
+    // .container-index{
+    //     background-color: $color-test-mobile;
+    // }
 
     .index-flex{
         margin: 25px;
@@ -79,7 +79,7 @@
 
 @media only screen and (min-width: 480px) and (max-width: 768px){
     .container-index{
-        background-color: $color-test-tablet;
+        // background-color: $color-test-tablet;
         .index-flex{
             @include size (auto,auto);
             @include pad-mar(0, 10px);
@@ -93,7 +93,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .container-index{
-        background-color: $color-test-pc;
+        // background-color: $color-test-pc;
         .index-flex{
             @include size (350px,"");
             // me quedaba mas lindo sin parametro asi que lo rompi apropocito jasjas seguramente este mal como practica
@@ -109,7 +109,7 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1400px){
     .container-index{
-        background-color: $color-test-over-pc;
+        // background-color: $color-test-over-pc;
         .index-flex{
             @include size (500px, auto);
             @include pad-mar(20px, 0);
