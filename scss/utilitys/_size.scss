@@ -4,3 +4,8 @@
     width: $width;
     height: $height;
 }
+
+@mixin pad-mar ($padding, $margin){
+    padding: $padding;
+    margin: $margin;
+}
