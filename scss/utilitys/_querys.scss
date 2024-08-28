@@ -2,6 +2,7 @@
 @import "extends";
 @import "colors";
 
+// =============================================MOBILE================================================
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
     // .container-index{
@@ -36,47 +37,9 @@
             }
         }
     }
-
-    .section-img{
-        img{
-            @include size (350px,auto);
-            object-fit: contain;
-            margin: 20px;
-        }
-    }
-
-    .section-text{
-            margin: 10px 25px;
-            font-size: 15;
-    }
-
-    .container-section {
-        @extend %container-flex;
-    }
     
-    .container-section > *:nth-of-type(3) {
-        order: 4; 
-    }
-    
-    .container-section > *:nth-of-type(4) {
-        order: 3; 
-    }
-    
-    .article-img img{
-        margin: 20px 0px;
-        width: 300px;
-        height: auto;
-    }
-
-    .aside-info{
-        margin: 50px;
-    }
-
-    .container-book{
-        @extend %container-flex;
-    }
 }
-
+// =============================================TABLET================================================
 @media only screen and (min-width: 480px) and (max-width: 768px){
     .container-index{
         // background-color: $color-test-tablet;
@@ -91,6 +54,7 @@
     }
 }
 
+// =============================================PC================================================
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .container-index{
         // background-color: $color-test-pc;
@@ -106,7 +70,7 @@
         }
     }
 }
-
+// =============================================TV================================================
 @media only screen and (min-width: 1024px) and (max-width: 1400px){
     .container-index{
         // background-color: $color-test-over-pc;
