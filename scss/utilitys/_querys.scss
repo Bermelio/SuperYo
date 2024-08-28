@@ -38,6 +38,17 @@
         }
     }
     
+    .article-img{
+        & img{
+            @include size(350px, auto);
+            @include pad-mar(0, 0);
+            transition: "";
+        }
+    }
+
+    .aside-info{
+        @include pad-mar(0, 0);
+    }
 }
 // =============================================TABLET================================================
 @media only screen and (min-width: 480px) and (max-width: 768px){
@@ -51,6 +62,18 @@
                 @include size (350px, auto)
             }
         }
+    }
+
+    .article-img{
+        & img{
+            @include size(450px, auto);
+            @include pad-mar(10px, 10px);
+            transition: "";
+        }
+    }
+
+    .aside-info{
+        @include pad-mar(0, 0);
     }
 }
 
@@ -69,6 +92,11 @@
             }
         }
     }
+
+    .aside-info{
+        width: 800px;
+        @include pad-mar(0, 0);
+    }
 }
 // =============================================TV================================================
 @media only screen and (min-width: 1024px) and (max-width: 1400px){
@@ -78,5 +106,17 @@
             @include size (500px, auto);
             @include pad-mar(20px, 0);
         }
+    }
+    
+    .article-img{
+        & img{
+            @include size(450px, auto);
+            @include pad-mar(50px, 0);
+            transition: "";
+        }
+    }
+
+    .aside-info{
+        @include pad-mar(0, 0);
     }
 }

@@ -255,6 +255,17 @@ footer {
   .grid-galery-img img:hover {
     all: unset;
   }
+  .article-img img {
+    width: 350px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    transition: "";
+  }
+  .aside-info {
+    padding: 0;
+    margin: 0;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .container-index .index-flex {
@@ -267,6 +278,17 @@ footer {
   .container-index .index-flex img {
     width: 350px;
     height: auto;
+  }
+  .article-img img {
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    transition: "";
+  }
+  .aside-info {
+    padding: 0;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -281,12 +303,28 @@ footer {
     width: 350px;
     height: auto;
   }
+  .aside-info {
+    width: 800px;
+    padding: 0;
+    margin: 0;
+  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1400px) {
   .container-index .index-flex {
     width: 500px;
     height: auto;
     padding: 20px;
+    margin: 0;
+  }
+  .article-img img {
+    width: 450px;
+    height: auto;
+    padding: 50px;
+    margin: 0;
+    transition: "";
+  }
+  .aside-info {
+    padding: 0;
     margin: 0;
   }
 }
