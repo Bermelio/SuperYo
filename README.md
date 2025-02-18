@@ -17,6 +17,6 @@ SuperYo es un proyecto personal en desarrollo que busca [breve descripción de l
 Si querés aportar al proyecto, podés hacer un fork del repositorio y enviar un pull request con tus mejoras.
 
 ## Contacto
-Si te parezco util para algun laburito contactame por mi correo > 📩 **Email:** [facundoperalta258@gmail.com](mailto:facundoperalta258@gmail.com)  
+Podes contactame por mi correo > 📩 **Email:** [facundoperalta258@gmail.com](mailto:facundoperalta258@gmail.com)  
 > *Envíame un mensaje y te responderé lo antes posible.*
 
